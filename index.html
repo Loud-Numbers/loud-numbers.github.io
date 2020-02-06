@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Chelsea+Market|Josefin+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-<h1>Loud Numbers</h1>
-<h2>A data sonification podcast, by Miriam Quick and Duncan Geere.</h2>
-<p>Coming soon - sign up for more details.</p>
-<p>EMAIL EMBED GOES HERE</p>
+    <div id="logo">
+        <h1>LOUD<br />
+            NUMBERS</h1>
+        <h2>a data sonification podcast</h2>
+        <p>from <a href="https://miriamquick.com/">Miriam Quick</a> and <a href="https://duncangeere.com/">Duncan Geere</a></p>
+    </div>
+    <p>coming soon - sign up to hear more:</p>
+    <div class="subscribe">
+        <form action="https://buttondown.email/api/emails/embed-subscribe/loudnumbers" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/loudnumbers', 'popupwindow')" class="embeddable-buttondown-form">
+            <label for="bd-email"></label>
+            <input type="email" name="email" id="bd-email">
+            <input type="hidden" value="1" name="embed"></input>
+            <input type="submit" value="Subscribe" id= "bd-submit"></input>
+
+        </form>
+
+    </div>
+    <ul class="social-icons">
+        <li><a href="https://buttondown.email/loudnumbers"><img src='mail.svg' /></a></li>
+        <li><a href="http://www.twitter.com/loudnumbers"><img src='twitter.svg' /></a></li>
+        <li><a href="http://www.instagram.com/loudnumbers"><img src='instagram.svg' /></a></li>
+    </ul>
 </body>
