@@ -43,10 +43,11 @@ p {
     color: #003380;
     background-color: #FFFBE4;
     vertical-align: middle;
+    outline: none;
 }
 
 input[type="submit"] {
-    height: 39px;
+    height: 42px;
     width: 90px;
     margin-left: -4px;
     background-color: #003380;
