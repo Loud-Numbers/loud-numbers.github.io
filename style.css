@@ -57,6 +57,7 @@ input[type="submit"] {
     font-size: 120%;
     border-width: 0px;
     vertical-align: middle;
+    -webkit-appearance: none;
 }
 
 a {
