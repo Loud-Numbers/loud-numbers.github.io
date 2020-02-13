@@ -49,7 +49,7 @@ p {
 input[type="submit"] {
     height: 42px;
     width: 90px;
-    margin-left: 10px;
+    margin-left: 5px;
     background-color: #003380;
     color: #FFFBE4;
     box-sizing:content-box;
