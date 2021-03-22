@@ -4,7 +4,8 @@
     <title>Loud Numbers - a Data Sonification Podcast</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Chelsea+Market|Josefin+Slab:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Josefin+Slab:wght@300;600&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -32,36 +33,36 @@
         <li><a href="http://www.instagram.com/loudnumbers"><img src='instagram.svg' /></a></li>
     </ul>
     <div class="faq">
-            <h2 class="divider">***</h2>
-            <h3 id="faq-title">FAQ</h3>
-            <h4 dir="ltr">What’s this all this about?</h4>
-            <p>Loud Numbers is a data sonification podcast, created by Duncan Geere and Miriam Quick. Data sonification is the process of turning data into sound, and we take it a step further by turning those sounds into music. In each episode, we introduce a data story, explain how we sonified it, and then play the sonification we’ve created.</p>
-            <h4 dir="ltr">Cool. How can I listen to it?</h4>
-            <p>You can’t yet. The first season of Loud Numbers will be released sometime around the end of May 2021. In the meantime, you might be able to get a sense of what it’s going to sound like through our <a href="http://buttondown.email/loudnumbers">development log newsletter</a>.</p>
-            <h4 dir="ltr">Who even are you, anyway?</h4>
-            <p><a href="https://miriamquick.com/">Miriam Quick</a> is a data journalist, researcher and author who explores novel ways of communicating data. She co-creates artworks that represent data through images, sculpture and sound and has a PhD in music from King’s College London. Her first book, <em><a href="https://www.iamabook.online/">I am a book. I am a portal to the universe.</a></em>, co-authored with Stefanie Posavec, was published in September 2020.</p>
-            <p><a href="http://www.duncangeere.com">Duncan Geere</a> is an information designer based in Gothenburg, Sweden, interested in climate and the environment. He works to communicate complex, nuanced information to a wider audience for a wide range of clients. He also works part-time for the climate charity Possible, and he's a generative artist and musician.</p>
-            <h4 dir="ltr">What software do you use to make your sonifications?</h4>
-            <p>We’ve tried a lot of sonification tools, and settled on a core technology stack of <a href="https://www.google.com/sheets/about/">Google Sheets</a> into <a href="http://sonic-pi.net/">Sonic Pi</a> into <a href="https://www.apple.com/logic-pro/">Logic Pro</a>. We normally do our calculations in Google Sheets, then export the data in .csv format. We then import the .csv to Sonic Pi and code the sonifications there. Finally, we export the sonifications as .wav files, and import them to Logic Pro to turn them into a song. Occasionally, we create simple sonification layers directly in Logic.</p>
-            <p>Sometimes we bring some other bits and pieces into the mix, but those three tools are the foundation of almost everything we’ve made as part of season one of Loud Numbers. Other good options include <a href="https://twotone.io/">twotone.io</a> for non-coders, and <a href="https://tonejs.github.io/">tone.js</a> for Javascript fans.</p>
-            <h4 dir="ltr">Is this an accessibility thing?</h4>
-            <p>Sonification is a fantastic accessibility tool - especially when it’s combined with visualization. There are lots of fantastic sonification works with a focus on accessibility, like <a href="https://medium.com/nightingale/hear-the-blind-spot-visualizing-data-for-those-who-cant-see-b370e6ec0b9e">Hear The Blind Spot</a> and the <a href="https://phet.colorado.edu/en/accessibility/prototypes">simulations created by PhET</a> at the University of Colorado Boulder.</p>
-            <p>We created Loud Numbers because we both love music and wanted to experiment with the creative possibilities of sonification. While we’re really excited about the project allowing a wider audience to enjoy data storytelling, we didn’t intentionally design it for accessibility reasons.</p>
-            <h4 dir="ltr">What are the equivalents of “standard” charts like bar, pie and line in sonification?</h4>
-            <p>Sonification is still an immature field, and there aren’t really “standards” yet. Data to pitch is a very common sonification mapping – the higher the pitch, the larger the quantity – but like many pie charts it’s not always executed very well. There are many other options, such as data to loudness or data to instrument. But like visualization, how you map data to sound depends so much on your data, the story and how your audience will experience it!</p>
-            <h4 dir="ltr">It’s common for dataviz to have design guidelines and industry standards for aesthetics and readability. Can you see that happening for sonification as well?</h4>
-            <p>Definitely, but sonification is much less common so it’ll probably take longer for those guidelines and standards to emerge. We’re interested in publishing a “Loud Numbers sonification style guide” of some sort at some point. But we need to get the podcast finished first!</p>
-            <h4 dir="ltr">Can you sonify qualitative data (like text), or does it have to be numbers?</h4>
-            <p>Great question. There’s a whole fascinating grey area between music driven by data, music that encodes texts (like <a href="https://en.wikipedia.org/wiki/Musical_cryptogram">musical cryptograms</a>), and music that’s structured according to quasi-mathematical principles. . When you map data to audio or musical parameters, the data does need to be numeric or categorical, but you can of course convert text to numbers and work with it that way. Or you can treat text as a kind of “loose” data - like we’re doing in our Boom &amp; Bust episode, where historical samples are positioned along a musical timeline.</p>
-            <h4 dir="ltr">Do you think it’s important to provide a key or legend for sonifications?</h4>
-            <p>Depends on your goal! If you’re making a sonification to communicate information then it’s important that people understand it. In this situation, you might find it tempting to create a visual legend or accompanying video – but this can sometimes draw focus away from the sound, as people are much more familiar with visualization than sonification.</p>
-            <p>We’re interested in experimenting with what happens when you can’t rely on visual backup. The introduction to each episode of Loud Numbers explains how the sonification works with some examples, which is kind of like a legend but in audio. </p>
-            <p>If all you’re interested in is creating something that sounds nice, and it’s not important whether people can pull data out of it or not, then a legend (audio or otherwise) is probably unnecessary.</p>
-            <h4 dir="ltr">How much music theory goes into Loud Numbers?</h4>
-            <p>Quite a lot! But that’s a personal choice, because we’re interested in how musical and data structures interact (or don’t). Miriam has a PhD in music, but Duncan has no formal training. You definitely don’t need a music theory background. Make punk sonifications!</p>
-            <h4 dir="ltr">Can I interview you for an article/podcast/research paper?</h4>
-            <p>Probably! It’ll be much easier to organise if you can give us a bit of notice.</p>
-            <h4 dir="ltr">Great, how do I contact you?</h4>
-            <p>Email us at <a href="mailto:numbersloud@gmail.com">numbersloud@gmail.com</a>.</p>
+        <h2 class="divider">***</h2>
+        <h3 id="faq-title">FAQ</h3>
+        <h4 dir="ltr">What’s this all this about?</h4>
+        <p>Loud Numbers is a data sonification podcast, created by Duncan Geere and Miriam Quick. Data sonification is the process of turning data into sound, and we take it a step further by turning those sounds into music. In each episode, we introduce a data story, explain how we sonified it, and then play the sonification we’ve created.</p>
+        <h4 dir="ltr">Cool. How can I listen to it?</h4>
+        <p>You can’t yet. The first season of Loud Numbers will be released sometime around the end of May 2021. In the meantime, you might be able to get a sense of what it’s going to sound like through our <a href="http://buttondown.email/loudnumbers">development log newsletter</a>.</p>
+        <h4 dir="ltr">Who even are you, anyway?</h4>
+        <p><a href="https://miriamquick.com/">Miriam Quick</a> is a data journalist, researcher and author who explores novel ways of communicating data. She co-creates artworks that represent data through images, sculpture and sound and has a PhD in music from King’s College London. Her first book, <em><a href="https://www.iamabook.online/">I am a book. I am a portal to the universe.</a></em>, co-authored with Stefanie Posavec, was published in September 2020.</p>
+        <p><a href="http://www.duncangeere.com">Duncan Geere</a> is an information designer based in Gothenburg, Sweden, interested in climate and the environment. He works to communicate complex, nuanced information to a wider audience for a wide range of clients. He also works part-time for the climate charity Possible, and he's a generative artist and musician.</p>
+        <h4 dir="ltr">What software do you use to make your sonifications?</h4>
+        <p>We’ve tried a lot of sonification tools, and settled on a core technology stack of <a href="https://www.google.com/sheets/about/">Google Sheets</a> into <a href="http://sonic-pi.net/">Sonic Pi</a> into <a href="https://www.apple.com/logic-pro/">Logic Pro</a>. We normally do our calculations in Google Sheets, then export the data in .csv format. We then import the .csv to Sonic Pi and code the sonifications there. Finally, we export the sonifications as .wav files, and import them to Logic Pro to turn them into a song. Occasionally, we create simple sonification layers directly in Logic.</p>
+        <p>Sometimes we bring some other bits and pieces into the mix, but those three tools are the foundation of almost everything we’ve made as part of season one of Loud Numbers. Other good options include <a href="https://twotone.io/">twotone.io</a> for non-coders, and <a href="https://tonejs.github.io/">tone.js</a> for Javascript fans.</p>
+        <h4 dir="ltr">Is this an accessibility thing?</h4>
+        <p>Sonification is a fantastic accessibility tool - especially when it’s combined with visualization. There are lots of fantastic sonification works with a focus on accessibility, like <a href="https://medium.com/nightingale/hear-the-blind-spot-visualizing-data-for-those-who-cant-see-b370e6ec0b9e">Hear The Blind Spot</a> and the <a href="https://phet.colorado.edu/en/accessibility/prototypes">simulations created by PhET</a> at the University of Colorado Boulder.</p>
+        <p>We created Loud Numbers because we both love music and wanted to experiment with the creative possibilities of sonification. While we’re really excited about the project allowing a wider audience to enjoy data storytelling, we didn’t intentionally design it for accessibility reasons.</p>
+        <h4 dir="ltr">What are the equivalents of “standard” charts like bar, pie and line in sonification?</h4>
+        <p>Sonification is still an immature field, and there aren’t really “standards” yet. Data to pitch is a very common sonification mapping – the higher the pitch, the larger the quantity – but like many pie charts it’s not always executed very well. There are many other options, such as data to loudness or data to instrument. But like visualization, how you map data to sound depends so much on your data, the story and how your audience will experience it!</p>
+        <h4 dir="ltr">It’s common for dataviz to have design guidelines and industry standards for aesthetics and readability. Can you see that happening for sonification as well?</h4>
+        <p>Definitely, but sonification is much less common so it’ll probably take longer for those guidelines and standards to emerge. We’re interested in publishing a “Loud Numbers sonification style guide” of some sort at some point. But we need to get the podcast finished first!</p>
+        <h4 dir="ltr">Can you sonify qualitative data (like text), or does it have to be numbers?</h4>
+        <p>Great question. There’s a whole fascinating grey area between music driven by data, music that encodes texts (like <a href="https://en.wikipedia.org/wiki/Musical_cryptogram">musical cryptograms</a>), and music that’s structured according to quasi-mathematical principles. . When you map data to audio or musical parameters, the data does need to be numeric or categorical, but you can of course convert text to numbers and work with it that way. Or you can treat text as a kind of “loose” data - like we’re doing in our Boom &amp; Bust episode, where historical samples are positioned along a musical timeline.</p>
+        <h4 dir="ltr">Do you think it’s important to provide a key or legend for sonifications?</h4>
+        <p>Depends on your goal! If you’re making a sonification to communicate information then it’s important that people understand it. In this situation, you might find it tempting to create a visual legend or accompanying video – but this can sometimes draw focus away from the sound, as people are much more familiar with visualization than sonification.</p>
+        <p>We’re interested in experimenting with what happens when you can’t rely on visual backup. The introduction to each episode of Loud Numbers explains how the sonification works with some examples, which is kind of like a legend but in audio. </p>
+        <p>If all you’re interested in is creating something that sounds nice, and it’s not important whether people can pull data out of it or not, then a legend (audio or otherwise) is probably unnecessary.</p>
+        <h4 dir="ltr">How much music theory goes into Loud Numbers?</h4>
+        <p>Quite a lot! But that’s a personal choice, because we’re interested in how musical and data structures interact (or don’t). Miriam has a PhD in music, but Duncan has no formal training. You definitely don’t need a music theory background. Make punk sonifications!</p>
+        <h4 dir="ltr">Can I interview you for an article/podcast/research paper?</h4>
+        <p>Probably! It’ll be much easier to organise if you can give us a bit of notice.</p>
+        <h4 dir="ltr">Great, how do I contact you?</h4>
+        <p>Email us at <a href="mailto:numbersloud@gmail.com">numbersloud@gmail.com</a>.</p>
     </div>
 </body>

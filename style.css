@@ -11,7 +11,7 @@ h1 {
     font-size: 800%;
     margin-bottom: 0px;
     line-height: 95%;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 h2 {
@@ -32,7 +32,7 @@ h3 {
 
 h4 {
     font-family: 'Josefin Slab', serif;
-    font-weight: 700;
+    font-weight: 600;
     text-align: left;
     margin-bottom: 0em;
     line-height: 110%;
@@ -41,10 +41,10 @@ h4 {
 
 p {
     margin-top: 0.5em;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-align: left;
     line-height: 150%;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 100%;
 }
 
@@ -67,7 +67,7 @@ a:hover {
 }
 
 .faq a {
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .faq h3 {
@@ -161,7 +161,7 @@ input[type="submit"] {
 
     p {
         font-size: 100%;
-        font-weight: 300;
+        font-weight: 100;
     }
 
     .social-icons {
