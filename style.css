@@ -124,6 +124,10 @@ input[type="submit"] {
     line-height: 95%;
 }
 
+#festival {
+    margin-top: 40px;
+}
+
 .social-icons {
     margin-top: 40px;
     padding-inline-start: 0px;
