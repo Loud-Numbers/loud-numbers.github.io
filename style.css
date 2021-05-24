@@ -57,6 +57,10 @@ a:hover {
     text-decoration: underline;
 }
 
+strong {
+    font-weight: 500;
+}
+
 .faq {
     width: 90%;
     color: #003380;
@@ -64,6 +68,7 @@ a:hover {
     height: auto;
     padding: 2px 20px;
     margin: 30px auto 60px auto;
+    text-align: center;
 }
 
 .faq a {
@@ -72,6 +77,13 @@ a:hover {
 
 .faq h3 {
     color: #003380;
+}
+
+.faq img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
 }
 
 .subscribe {
