@@ -70,6 +70,13 @@ hr {
     margin-top: 25px;
 }
 
+.festival iframe {
+    margin-top: 20px;
+}
+.festival h4 {
+    text-align: center;
+}
+
 .faq {
     width: 90%;
     color: #003380;
