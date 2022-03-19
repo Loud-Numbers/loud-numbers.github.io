@@ -15,7 +15,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Josefin Sans', serif;
     color: #FFFBE4;
     text-align: center;
     font-size: 300%;
@@ -23,7 +23,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Josefin Sans', serif;
     color: #FFFBE4;
     text-align: center;
     font-size: 200%;
@@ -31,7 +31,7 @@ h3 {
 }
 
 h4 {
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Josefin Sans', serif;
     font-weight: 600;
     text-align: left;
     margin-bottom: 0em;
@@ -172,7 +172,7 @@ input[type="submit"] {
     background-color: #003380;
     color: #FFFBE4;
     box-sizing: content-box;
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Josefin Sans', serif;
     font-size: 120%;
     border-width: 0px;
     vertical-align: middle;
@@ -201,6 +201,7 @@ input[type="submit"] {
 .social-icons li {
     display: inline-block;
     list-style-type: none;
+    user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
 }
